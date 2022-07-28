@@ -1,0 +1,48 @@
+public class ejercicio8 {
+
+    public static void main (String[] args) {
+
+        Persona persona = new Persona ();
+
+        persona.setEdad("30");
+        String edad = persona.getEdad();
+        System.out.println(edad);
+
+        persona.setNombre("Catalina");
+        String nombre = persona.getNombre();
+        System.out.println(nombre);
+
+        persona.setTelefono("503489");
+        String telefono = persona.getTelefono();
+        System.out.println(telefono);
+
+    }
+}
+class Persona   {
+
+    private String edad;
+    private String nombre;
+    private String telefono;
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+}
